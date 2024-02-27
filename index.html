@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Страница Ивана Рудакова</title>
+
+    <link href="styles.css" rel="stylesheet">
+    <link href="styles-mobile.css" rel="stylesheet">
+    <link href="keyframes.css" rel="stylesheet">
+    <script defer src="static/js/main.js"></script>
+</head>
+<body>
+<main class="screen">
+    <section class="block block_profile">
+        <div class="block__background block__background_animated"></div>
+        <div class="block__content block__content_padding-m">
+            <img alt="profile" class="profile-picture" src="static/img/profile_picture.jpg">
+            <div class="block__titles">
+                <h1 class="block__title block__title-xl block__title_color-inversed">Рудаков Иван</h1>
+                <h2 class="block__subtitle block__subtitle_color-inversed">Талантливый программист и ответственный
+                    разработчик</h2>
+            </div>
+        </div>
+    </section>
+    <section class="block block_column block_projects" id="block-projects">
+        <h1 class="block__title block__title-xl" onclick="changeActiveBlockTo('block-projects')">Проекты</h1>
+        <div class="block__content block__content_padding-m block__content_projects">
+            <section class="project-grid">
+                <section class="project-grid__project">
+                    <img alt="project image" class="project__image" src="static/img/lines.jpg">
+                    <div class="project__text">
+                        <h3 class="project__name">Игра Lines</h3>
+                        <span class="project__description">Видеоигра 4-в-ряд на Python + QT</span>
+                    </div>
+                </section>
+                <section class="project-grid__project">
+                    <img alt="project image" class="project__image" src="static/img/kobayashi.jpg">
+                    <div class="project__text">
+                        <h3 class="project__name">Бот Кобаяши</h3>
+                        <span class="project__description">Телеграм-бот для напоминалок</span>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+    <section class="block block_column block_skills" id="block-skills">
+        <h1 class="block__title block__title-xl" onclick="changeActiveBlockTo('block-skills')">Умения и технологии</h1>
+        <div class="block__content block__content_padding-m"
+             style="transform: scaleY(0); overflow: hidden; height: 0; padding: 0">
+            <section class="skills">
+                <section class="skills__sub-block">
+                    <h4 class="skills__sub-block__title">
+                        Я знаю
+                    </h4>
+                    <ul class="skills__list">
+                        <li class="skills__list__item">HTML</li>
+                        <li class="skills__list__item">CSS</li>
+                        <li class="skills__list__item">JS</li>
+                        <li class="skills__list__item">Python</li>
+                    </ul>
+                </section>
+                <div class="skills__divider"></div>
+                <section class="skills__sub-block">
+                    <h4 class="skills__sub-block__title">
+                        Я умею
+                    </h4>
+                    <ul class="skills__list">
+                        <li class="skills__list__item">Работать в команде</li>
+                        <li class="skills__list__item">Решать сложные задачи</li>
+                        <li class="skills__list__item">Принимать критику</li>
+                        <li class="skills__list__item">Прорабатывать архитектуру</li>
+                    </ul>
+                </section>
+                <div class="skills__divider"></div>
+                <section class="skills__sub-block">
+                    <h4 class="skills__sub-block__title">
+                        Я изучаю
+                    </h4>
+                    <ul class="skills__list">
+                        <li class="skills__list__item">C#</li>
+                        <li class="skills__list__item">Bootstrap</li>
+                        <li class="skills__list__item">Tailwind</li>
+                        <li class="skills__list__item">Python</li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </section>
+    <section class="block block_column block_contacts" id="block-contacts">
+        <h1 class="block__title block__title-xl" onclick="changeActiveBlockTo('block-contacts')">Контакты</h1>
+        <div class="block__content block__content_padding-m"
+             id="contacts__content" style="transform: scaleY(0); overflow: hidden; height: 0; padding: 0">
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@media screen and (max-width: 420px) {
+    body {
+        font-size: 13px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills__list {
+        text-align: left;
+    }
+}
