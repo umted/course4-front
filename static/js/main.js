@@ -1,5 +1,5 @@
 let activeBlock = 'block-projects';
-const apiHost = 'http://localhost:3000';
+const apiHost = 'https://course4-back-production.up.railway.app/';
 
 function changeActiveBlockTo(newActiveBlock) {
     if (newActiveBlock !== activeBlock) {
